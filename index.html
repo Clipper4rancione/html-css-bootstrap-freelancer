@@ -8,16 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Bootstrap Layout</title>
+    <title>Bootstrap Freelancer</title>
 </head>
 <body>
     <header>
             <div class="sc-container">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col">Start bootstrap</div>
-                        <div class="col d-none d-lg-block">menu</div>
-                        <div class="col d-lg-none text-end">H</div>
+                        <div class="col-6">Start bootstrap</div>
+                        <div class="col-6 d-none d-md-block d-lg-block text-end">
+                            <ul>
+                                <li><a href="#"></a>portfolio</li>
+                                <li><a href="#"></a>about</li>
+                                <li><a href="#"></a>contact</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 d-md-none d-lg-none text-end">H</div>
                     </div>
                 </div>
             </div>
@@ -28,9 +34,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="jumbo-img">
+                        <div class="jumbo-img text-center">
                             JUMBO IMG
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>START BOOTSTRAP</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <span>--- X ---</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <span>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
                     </div>
                 </div>
             </div>
@@ -39,15 +60,32 @@
     <main>
         <section id="portfolio">
             <div class="sc-container">
-                <div class="container">
-                    <div class="row row-cols-1 row-cols-lg-3">
-                        <div class="col-md-2">1</div>
-                        <div class="col-md-2">2</div>
-                        <div class="col-md-2">3</div>
-                    
-                        <div class="col-md-2">4</div>
-                        <div class="col-md-2">5</div>
-                        <div class="col-md-2">6</div>
+                <div class="container d-flex">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                        <div class="col-md-2 col-lg-4">
+                            <img src="https://www.fillmurray.com/g/300/200" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-lg-4">
+                            <img src="https://www.fillmurray.com/g/300/200" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-lg-4">
+                            <img src="https://www.fillmurray.com/g/300/200" alt="">
+                        </div>
+
+                        <div class="col-md-2">
+                            <img src="https://www.fillmurray.com/g/300/200" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-lg-4">
+                            <img src="https://www.fillmurray.com/g/300/200" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-lg-4">
+                            <img src="https://www.fillmurray.com/g/300/200" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,8 +100,8 @@
                         <div class="col text-center">--- X ---</div>
                     </div>
                     <div class="row">
-                        <div class="col-md">Lorem</div>
-                        <div class="col-md">Lorem</div>
+                        <div class="col-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus iste perspiciatis reprehenderit id est saepe veritatis possimus? Similique voluptatem ea nostrum sint omnis accusamus unde impedit ex earum magnam.</div>
+                        <div class="col-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam, corporis, in non, maxime voluptatum ipsum officiis voluptatibus quos enim voluptate amet veritatis tenetur eveniet expedita cupiditate aliquam sapiente laboriosam.</div>
                     </div>
                     <div class="row">
                         <div class="col text-center">
@@ -99,13 +137,12 @@
         <section id="top-footer">
             <div class="sc-container_md">
                 <div class="container">
-                    <div class="row">
+                    <div class="row d-flex flex-column flex-md-row">
                         <div class="col d-flex flex-column text-center">
                             <span>LOCATION</span>
                             <span>2215 John Daniel Drive Clark, MO 54243</span>
                         </div>
-                    </div>
-                    <div class="row">
+                    
                         <div class="col d-flex flex-column text-center">
                             <span>AROUND THE WEB</span>
                             <div class="social-container">
@@ -115,17 +152,24 @@
                                 <i class="fa-brands fa-linkedin"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                    
+                        <div class="col text-center">
                             <span>ABOUT FREELANCER</span>
-                            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrao</a>.</p>
+                            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="bot-footer"></section>
+        <section id="bot-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <span>Copyright Your Website 2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
