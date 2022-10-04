@@ -34,6 +34,28 @@
 .star .line.white{
     background-color: white;
 }
+.star .line.black{
+    background-color: #2c3e50;
+}
+/* BUTTONS */
+
+.cta-btn{
+    color: white;
+    font-weight: 700;
+    border: 1px solid lightslategray;
+}
+.cta-btn:hover{
+    border: 1px solid white;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.about-btn{
+    background-color: #1abc9c;
+}
+.about-btn:hover{
+    background-color: #1abc9ccc;
+}
 
 /* HEADER  */
 
@@ -77,16 +99,38 @@ header .navbar a{
     font-weight: 700;
     color: #2c3e50;
 }
-#portfolio .star .line{
-    background-color: #2c3e50;
-}
-
 .card-img img{
     width: 100%;
     border-radius: 30px;
     margin-bottom: 30px;
+    
+}
+.card-img{
+    cursor: pointer;
+    position: relative;
+    transition: all 1s;
+}
+.card-img i{
+    display: none;
+    position: absolute;
+    font-size: 70px;
+    color: white;
+    z-index: 999;
+    top: 90px;
+    right: 175px;
+    
+}
+.card-img:hover{
+    filter: brightness(0.7);
 }
 
+.card-img:hover i{
+    display: block;
+}
+::placeholder{
+    color: black;
+    font-size: 20px;
+}
 /* SECTION ABOUT */
 
 #about p{
@@ -97,27 +141,39 @@ header .navbar a{
     font-weight: 700;
 }
 
-.cta-btn{
-    color: white;
+/* SECTION CONTACT */
+
+#contact-us h2{
+    margin-top: 30px;
     font-weight: 700;
-    border: 1px solid lightslategray;
-}
-.cta-btn:hover{
-    border: 1px solid white;
-    transform: scale(1.2);
-    transition: all 1s;
-}
-#top-footer{
-    /* DEBUG */
-    height: 440px;
-    background-color: #3a546d;
-}
-#bot-footer{
-    /* DEBUG */
-    height: 60px;
-    background-color: #2c3e50;
 }
 
+.cm-form .form-control{
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/* FOOTER */
+
 footer{
-    height: 500px;
+    background-color: #3a546d;
+    color: white;
+}
+footer .cm-col{
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+.cm-col a{
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+.footer-bot{
+    width: 100%;
+    height: 40px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: .8rem;
 }
